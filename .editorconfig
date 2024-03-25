@@ -1,0 +1,30 @@
+# top-most EditorConfig file
+root = true
+
+# Unix-style newlines with a newline ending every file
+[*]
+end_of_line = lf
+insert_final_newline = true
+cpp_new_line_before_open_brace_lambda = next_line
+cpp_indent_namespace_contents = false
+
+# 4 space space indentation
+[*.py]
+indent_style = space
+indent_size = 4
+
+# 8 space tab indentation for CPP files
+[*.{cc,cpp,H,h}]
+indent_style = space
+indent_size = 4
+cpp_indent_namespace_contents = false
+
+# Tab indentation for Makefiles
+[Makefile]
+indent_style = tab
+indent_size = 4
+
+# Restructuredtext (documentation) files
+[*.rst]
+indent_style = space
+indent_size = 4
