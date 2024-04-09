@@ -35,5 +35,5 @@ eigen:
 
 bin/%: src/%.cpp $(HDR)
 	mkdir -p bin
-	$(CC) -std=c++17 $< -o $@ -I ./src -g -Wall -Wno-sign-compare -Wfatal-errors
-
+	$(CC) -std=c++17 $< -o $@ -I ./src -g -Wall -Wno-sign-compare -Wfatal-errors -lstdc++fs
+ 
